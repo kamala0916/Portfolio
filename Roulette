@@ -1,0 +1,77 @@
+import random
+
+# color = ["Red", "Black"]
+# guess = (input("Pick a color black or red:" ))
+# if guess == color:
+#     print("You Won")
+# else:
+#     print("You Lost")
+
+def guessColor():
+    guess=input("Pick a color black or red:" )
+
+    color = ["red", "black"]
+
+    colorpick=color[random.randint(0,1)]
+    if guess==colorpick:
+        print("Your Guess: " + str(guess))
+        print("The Color: " + str(colorpick))
+        print("You Won")
+    else:
+        print("Your Guess: " + str(guess))
+        print("The Color: " + str(colorpick))
+        print("You Lost")
+guessColor()
+
+import random
+
+# choice = input("What type of bet would you like to make: ")
+
+def guessNum():
+    guess = int(input("Guess a number between 1 and 36: "))
+
+    number = random.randint(1, 36)
+
+    if guess == number:
+        print("Your Guess: " + str(guess))
+        print("The Number: " + str(number))
+        print("You Won")
+    else:
+        print("Your Guess: " + str(guess))
+        print("The Number: " + str(number))
+        print("You Lost")
+
+guessNum()
+
+
+import random
+# number = random.randint(1, 36)
+# choice = (int)(input("Guess a number between 1 and 36: "))
+
+def guessNum():
+    number = random.randint(1, 36)
+
+    guess = input("Guess even or odd: ")
+
+    if number%2==0:
+        if guess == "even":
+            print("Your Guess: " + str(guess))
+            print("The : " + str(number))
+            print("You Won")
+
+        else:
+            print("Your Guess: " + str(guess))
+            print("The : " + str(number))
+            print("You Lose")
+    else:
+        if guess == "odd":
+            print("Your Guess: " + str(guess))
+            print("The Number: " + str(number))
+            print("You Won")
+
+        else:
+            print("Your Guess: " + str(guess))
+            print("The Number: " + str(number))
+            print("You Lose")
+
+guessNum()
