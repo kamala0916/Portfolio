@@ -1,4 +1,4 @@
-<DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
   
@@ -12,28 +12,9 @@
       
      background-image: url("http://www.hdesktops.com/wp-content/uploads/2013/12/green-abstract-1080p-1080p-wallpaper-hdtv-97.jpg");
       
-     <h2>External JavaScript</h2>
-
-<p id="demo">Reflection 7/31/17.</p>
-
-<button type="button" onclick="myFunction()">Click to Reveal</button>
-
-<p>(myFunction is stored in an external file called "myScript.js")</p>
-
-<script>
-    function myFunction(){
-      
-      document.getElementById("demo").innerHTML = "Kamala";
-      
-      }
-    
-    
-    
-    </script>
-
-</body>
-</html>
     }
+
+    
     
     
   </style>  
@@ -42,9 +23,23 @@
 <title> H.Kamala</title>
 </head>
 <body>
-  
-  <hl> REFLECTION </hl>
-  </p> It makes me exited that computer science plays a huge role in robotics. It also makes me nervous because things like selfdriving cars will cause unemployment. Working in groups is the best idea, even though I always liked working independently. My gorupmates always help me whenever I struggle which I enjoy a lot.   </p>
-  
+ 
   </body>
+   <h2>External JavaScript</h2>
+<p id="demo"></p>
+<button onclick="myFunction()">Reflection</button>
+<button onclick="aboutMe()">About Me</button>
+
+<script>
+ function myFunction(){
+      
+      document.getElementById("demo").innerHTML = "Kamala";
+    }
+    
+    function aboutMe() {
+      document.getElementById("demo").innerHTML = "Hi, my name is Kamala and I am 17 years old. I am a junior at FDR high school. I was born in Azerbaijan, city Baku. I moved to New York when I was 12. What I like about photography is that when you take a picture of something is like capturing a memory. I like to take pictures of architecture. Specifically, buildings with a unique design. I travel to the city a lot and I always look for a nice or a unique view. In Baku there are several different beautiful buildings that I didn't get to take pictures of yet. I am a very positive person so I like to make my subject stand out by making it more bright or colorful.";
+      }
+
+</script>
+
   </html>
