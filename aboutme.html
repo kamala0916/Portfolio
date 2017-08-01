@@ -17,6 +17,11 @@ h1 {
         width: 300px;
     }
     
+    #demo {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 18px;
+    }
+    
   </style>  
   
   
@@ -34,12 +39,13 @@ h1 {
 
 <script>
 function myFunction(){
-      document.getElementById("demo").innerHTML = "Kamala";
+      document.getElementById("demo").innerHTML = "0";
+
     }
     
  function aboutMe() {
-      document.getElementById("demo").innerHTML = "Hi, my name is Kamala and I am 17 years old. I am a junior at FDR high school. I was born in Azerbaijan, city Baku. I moved to New York when I was 12. What I like about photography is that when you take a picture of something is like capturing a memory. I like to take pictures of architecture. Specifically, buildings with a unique design. I travel to the city a lot and I always look for a nice or a unique view. In Baku there are several different beautiful buildings that I didn't get to take pictures of yet. I am a very positive person so I like to make my subject stand out by making it more bright or colorful.";
-      }
+     document.getElementById("demo").innerHTML = "Hi, my name is Kamala and I am 17 years old. I am a junior at FDR high school. I was born in Azerbaijan, city Baku. I moved to New York when I was 12. What I like about photography is that when you take a picture of something is like capturing a memory. I like to take pictures of architecture. Specifically, buildings with a unique design. I travel to the city a lot and I always look for a nice or a unique view. In Baku there are several different beautiful buildings that I didn't get to take pictures of yet. I am a very positive person so I like to make my subject stand out by making it more bright or colorful.";
+ }
 function image(){
     let img1 = "https://static.wixstatic.com/media/5be07c_b9f330303b9540308002b8602a95a5f6~mv2.jpg/v1/fill/w_668,h_445,al_c,q_80,usm_0.66_1.00_0.01/5be07c_b9f330303b9540308002b8602a95a5f6~mv2.webp";
     let img2 = "https://static.wixstatic.com/media/5be07c_4ab896e44b3344eaaaa85803ffcf8981~mv2_d_1932_2576_s_2.jpg/v1/fill/w_359,h_478,al_c,q_90,usm_0.66_1.00_0.01/5be07c_4ab896e44b3344eaaaa85803ffcf8981~mv2_d_1932_2576_s_2.webp";
@@ -50,6 +56,10 @@ function image(){
        } else{
             document.getElementById("pic").src = img1;
         }
+    
+
+        
+        
 }
 
 
