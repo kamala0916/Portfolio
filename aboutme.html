@@ -4,17 +4,31 @@
   
   <style>                 
 h1 {
-    color: blue;
+    color: White;
     }
     
     body{
      color: white;
      background-image: url("http://www.hdesktops.com/wp-content/uploads/2013/12/green-abstract-1080p-1080p-wallpaper-hdtv-97.jpg");
+     text-align: center;
+}
+button{
+    margin-left: 50px;
+    margin-right:50px;
+}
+img{
+    
+    height: 250px;
+    width: 300px;
+}
+
+  
+     
     }    
     
     img {
         height: 300px;
-        width: 300px;
+        width: 400px;
     }
     
     #demo {
@@ -22,18 +36,70 @@ h1 {
     font-size: 18px;
     }
     
+    .button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.button1 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #4CAF50;
+}
+
+.button1:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.button2 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #008CBA;
+}
+
+.button2:hover {
+    background-color: #008CBA;
+    color: white;
+}
+
+    
+    
   </style>  
   
   
 <title> H.Kamala</title>
 </head>
 
-<body>
+<body onload="loadImage()">
+   <h1>Photo Gallery</h1>
+    <img id = "pics" src = "URLg">
+    <br>
+    
+        
+<button class="button button1" onclick = "Left()">Left</button>
+<button class="button button2" onclick = "Right()">Right</button>
+     
+        
+
+
+
 <p id="demo"></p>
-<img id="pic" src="https://static.wixstatic.com/media/5be07c_b9f330303b9540308002b8602a95a5f6~mv2.jpg/v1/fill/w_668,h_445,al_c,q_80,usm_0.66_1.00_0.01/5be07c_b9f330303b9540308002b8602a95a5f6~mv2.webp">
+<img id="pic" onclick="image()"src="https://static.wixstatic.com/media/5be07c_b9f330303b9540308002b8602a95a5f6~mv2.jpg/v1/fill/w_668,h_445,al_c,q_80,usm_0.66_1.00_0.01/5be07c_b9f330303b9540308002b8602a95a5f6~mv2.webp">
 <button onclick="myFunction()">Reflection</button>
 <button onclick="aboutMe()">About Me</button>
-<button onclick="image()">Pic</button>
+
+
 </body>
 
 
@@ -48,7 +114,7 @@ function myFunction(){
  }
 function image(){
     let img1 = "https://static.wixstatic.com/media/5be07c_b9f330303b9540308002b8602a95a5f6~mv2.jpg/v1/fill/w_668,h_445,al_c,q_80,usm_0.66_1.00_0.01/5be07c_b9f330303b9540308002b8602a95a5f6~mv2.webp";
-    let img2 = "https://static.wixstatic.com/media/5be07c_4ab896e44b3344eaaaa85803ffcf8981~mv2_d_1932_2576_s_2.jpg/v1/fill/w_359,h_478,al_c,q_90,usm_0.66_1.00_0.01/5be07c_4ab896e44b3344eaaaa85803ffcf8981~mv2_d_1932_2576_s_2.webp";
+    let img2 = "https://static.wixstatic.com/media/5be07c_f9fa5f0118ed4972a49d0053df45de04~mv2_d_6000_4000_s_4_2.jpg/v1/fill/w_668,h_445,al_c,q_80,usm_0.66_1.00_0.01/5be07c_f9fa5f0118ed4972a49d0053df45de04~mv2_d_6000_4000_s_4_2.webp";
     
     
     if ( document.getElementById("pic").src === img1){
@@ -56,11 +122,39 @@ function image(){
        } else{
             document.getElementById("pic").src = img1;
         }
-    
-
-        
-        
 }
+        
+  var imgindex = 0;
+var images = ["https://static.wixstatic.com/media/5be07c_1229bc1af3f742ed805df570d6f19a52~mv2_d_3840_2880_s_4_2.jpg/v1/fill/w_703,h_527,al_c,q_90,usm_0.66_1.00_0.01/5be07c_1229bc1af3f742ed805df570d6f19a52~mv2_d_3840_2880_s_4_2.webp", "https://static.wixstatic.com/media/5be07c_83bdd92d9e364afd9972b25bda866a30~mv2_d_5301_4000_s_4_2.jpg/v1/fill/w_698,h_527,al_c,q_90,usm_0.66_1.00_0.01/5be07c_83bdd92d9e364afd9972b25bda866a30~mv2_d_5301_4000_s_4_2.webp", "https://static.wixstatic.com/media/5be07c_3cd155fb55064e23b94c403891a62ae5~mv2_d_6000_4000_s_4_2.jpg/v1/fill/w_791,h_527,al_c,q_90,usm_0.66_1.00_0.01/5be07c_3cd155fb55064e23b94c403891a62ae5~mv2_d_6000_4000_s_4_2.webp", "https://static.wixstatic.com/media/5be07c_2236b1ae5ef840ba8eff429ddde9e435~mv2_d_6000_3763_s_4_2.jpg/v1/fill/w_840,h_527,al_c,q_90,usm_0.66_1.00_0.01/5be07c_2236b1ae5ef840ba8eff429ddde9e435~mv2_d_6000_3763_s_4_2.webp", "https://static.wixstatic.com/media/5be07c_d5237e02dd234313a74b025a261447c0~mv2_d_5328_4000_s_4_2.jpg/v1/fill/w_702,h_527,al_c,q_90,usm_0.66_1.00_0.01/5be07c_d5237e02dd234313a74b025a261447c0~mv2_d_5328_4000_s_4_2.webp"];
+
+function loadImage(){
+    document.getElementById("pics").src = images[imgindex];
+}
+
+function Left(){
+    imgindex--;
+    
+    if (imgindex < 0){
+        imgindex = 4;
+    }
+    
+    loadImage();
+    document.getElementById ("demo").innerHTML = imgindex;
+}
+
+function Right(){
+    imgindex++;
+    
+    if (imgindex > 4){
+        imgindex = 0;
+    }
+    
+    loadImage();
+    document.getElementById ("demo").innerHTML = imgindex;
+}
+        
+        
+
 
 
 
