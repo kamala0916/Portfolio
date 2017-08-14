@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Page Title</title>
+    </head>
+
+     <style>
+    body{
+     color: black;
+     background-image: url("https://s-media-cache-ak0.pinimg.com/736x/f4/ac/6a/f4ac6aac3afb587f6cae04155656fca3--white-texture-wordpress-theme.jpg");
+     text-align: center;
+     font-family: "Times New Roman", Times, serif;
+}
+    img{
+    height: 400px;
+    width: 400px;
+    }
+  </style>  
+  <img src="https://static.wixstatic.com/media/5be07c_21989311f67f471ebe72c7a97b0cb01a~mv2.png/v1/fill/w_200,h_200,al_c/5be07c_21989311f67f471ebe72c7a97b0cb01a~mv2.png">
+  <body>
+     
+     </body>
+        
+</html>
