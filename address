@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        #inputId {
+            margin: 5px;
+        }
+        body{
+            text-align: center;
+            background-image: url("http://www.newdesignfile.com/postpic/2011/06/abstract-vector-design_40244.png");
+            text-align: center;
+        background-size:     cover; 
+        background-repeat:   no-repeat;
+
+            }
+        
+        
+        button {
+    border: none;
+    color: white;
+    padding: 10px 10px;
+    text-align: center;
+    font-family: 'Libre Baskerville', serif;
+    display: inline-block;
+    font-size: 18px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    margin-right: 20px;
+}
+ button {
+    background-color: white;
+    color: black;
+    border: 2px solid #80baed;
+}
+button:hover {
+    background-color: #80baed;
+    color: white;
+    border: #80baed;
+}
+
+
+        input {
+            border: 2px solid #80baed;
+            height: 40px;
+            width: 250px;
+        }
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    </style>
+</head>
+<body>
+    
+<form action"https://codehs.com/editor/html/469208/445793/index.html">
+<ul id = "addresses">
+
+ <input type="text" name="address" placeholder="Your Address">
+  
+  </ul>
+  <button type="button" onclick="addAddress()">Add Address</button>
+  <br><br>
+  <button type="button" input id="submit" name="submit" type="submit" value="Submit" onclick="action">Submit</button>
+  
+</form> 
+
+<script>
+    function addAddress() {
+      
+    var input = document.createElement("input");
+    var textnode = document.createTextNode("Water");
+    
+    input.setAttribute('type', 'text');
+    input.setAttribute('placeholder', 'Other Adress');
+    input.setAttribute('id', "inputId");    
+    input.appendChild(textnode);
+
+    var list = document.getElementById("addresses");
+    list.insertBefore(input, list.childNodes[2]);
+    
+    }
+</script>
+
+</body>
+</html>
