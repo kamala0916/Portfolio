@@ -3,16 +3,15 @@
  <head>
         <title>MID</title>
     </head>
-    
+
      <style>
     body{
      color: black;
         background-image: url("http://www.newdesignfile.com/postpic/2011/06/abstract-vector-design_40244.png");
-        background-position: 100%; 
         text-align: center;
-       margin-right: -150px
-    
-    
+        background-size:     cover; 
+        background-repeat:   no-repeat;
+
 }
     img{
     height: 280px;
@@ -44,18 +43,14 @@
     color: white;
     border: #80baed;
 }
-
-
-
-
   </style>
   <div>
   <img src="https://static.wixstatic.com/media/5be07c_44246dab7f7641d79d7e5d83e284fc54~mv2.png/v1/fill/w_200,h_200,al_c/5be07c_44246dab7f7641d79d7e5d83e284fc54~mv2.png">
 
   </div>
   <div>
-  <button class="button button1" onclick = "midpoint()">Find Your Midpoint</button>
-   <button class="button button1" onclick = "midpoint()">About MID</button>
+  <button class="button" onclick = "FindMidpoint()">Find Your Midpoint</button>
+  <button class="button" onclick = "midpoint()">About MID</button>
   </div>
 
 
@@ -64,3 +59,4 @@
      </body>
 
 </html>
+
